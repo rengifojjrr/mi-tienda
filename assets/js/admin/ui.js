@@ -56,7 +56,8 @@ export function modal({ titulo, subtitulo = '', icono = null, contenido = '', an
       document.removeEventListener('keydown', teclas);
       resolver(valor);
     };
-    const teclas = (e) => { if (e.key === 'Escape') cerrar(null); };
+    // Con modales apilados, Escape cierra sólo el de arriba.
+    const teclas = (e) => { if (e.key === 'Escape' && capa === [...document.querySelectorAll('.z-\\[110\\]')].pop()) cerrar(null); };
     document.addEventListener('keydown', teclas);
     capa.addEventListener('mousedown', (e) => { if (e.target === capa) cerrar(null); });
     capa.addEventListener('click', (e) => {
