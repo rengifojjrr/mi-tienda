@@ -295,7 +295,7 @@ function vistaCategoria(c, n) {
         ${img ? `<img class="w-full h-full object-cover rounded-full" src="${img}" alt="">` : ico(icono, 'text-primary text-[30px]')}</div>
       <span class="font-label-md text-label-md text-on-surface line-clamp-1">${nombre}</span>
       <span class="font-label-sm text-label-sm text-on-surface-variant">${n} productos</span></div>
-    <div class="overflow-hidden rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col">
+    <div class="overflow-hidden rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col w-full max-w-[240px] sm:max-w-none mx-auto">
       <div class="relative aspect-[4/3] bg-surface-container-high overflow-hidden">
         ${img ? `<img src="${img}" alt="" class="w-full h-full object-cover">` : `<div class="w-full h-full flex items-center justify-center">${ico(icono, 'text-[48px] text-primary')}</div>`}
         <div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/70 via-transparent to-transparent"></div>

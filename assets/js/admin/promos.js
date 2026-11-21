@@ -457,10 +457,13 @@ async function formularioBanner(original = null) {
         if (elegidas?.length) { imagen = elegidas[0].url; pintarImagen(); refrescar(); }
       });
       $('[data-quitar-img]', capa).addEventListener('click', () => { imagen = ''; pintarImagen(); refrescar(); });
+      // Se inserta donde estaba el cursor; si nunca se tocó el mensaje, al final.
+      let mensajeTocado = false;
+      el.mensaje_whatsapp.addEventListener('focus', () => { mensajeTocado = true; });
       $('[data-insertar-tienda]', capa).addEventListener('click', () => {
         const t = el.mensaje_whatsapp;
-        const desde = t.selectionStart ?? t.value.length;
-        t.setRangeText('{tienda}', desde, t.selectionEnd ?? desde, 'end');
+        if (mensajeTocado && t.selectionStart != null) t.setRangeText('{tienda}', t.selectionStart, t.selectionEnd ?? t.selectionStart, 'end');
+        else t.value = `${t.value}${t.value && !/\s$/.test(t.value) ? ' ' : ''}{tienda}`;
         t.focus();
         refrescar();
       });

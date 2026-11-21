@@ -380,7 +380,7 @@ function htmlDetalle(c, pedidos, etiquetas) {
       </div>
     </div>
     ${c.telefono
-      ? `<a href="${esc(urlWhatsApp(c.telefono, mensajeHola(c)))}" target="_blank" rel="noopener" class="btn-wa w-full">${ico('chat', 'text-[18px]', true)}Escribir por WhatsApp<span class="tnum font-normal opacity-90">· ${esc(telefonoBonito(c.telefono))}</span></a>`
+      ? `<a href="${esc(urlWhatsApp(c.telefono, mensajeHola(c)))}" target="_blank" rel="noopener" class="btn-wa w-full">${ico('chat', 'text-[18px]', true)}Escribir por WhatsApp<span class="hidden xs:inline tnum font-normal opacity-90">· ${esc(telefonoBonito(c.telefono))}</span></a>`
       : '<p class="p-3 rounded-xl bg-surface-container-low font-body-sm text-body-sm text-on-surface-variant">Sin teléfono: agrega su WhatsApp abajo para escribirle desde aquí.</p>'}
     <div class="grid grid-cols-2 gap-2">
       ${stat('Pedidos', numero(c.total_pedidos), 'receipt_long')}

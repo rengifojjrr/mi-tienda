@@ -602,9 +602,9 @@ async function aplicarEstado(actual, nuevo) {
   const acciones = () => actual.api.cuerpo.querySelector('[data-acciones-estado]');
   actual.ocupado = true;
   acciones()?.classList.add('opacity-60', 'pointer-events-none');
+  const antes = !!p.stock_descontado;
   try {
     const r = await db.rpc('mt_cambiar_estado_pedido', { p_id: p.id, p_estado: nuevo });
-    const antes = !!p.stock_descontado;
     const despues = r?.stock_descontado ?? antes;
     toast(`${p.numero}: ${ESTADOS_PEDIDO[nuevo].texto}${!antes && despues ? ' · stock descontado' : antes && !despues ? ' · stock devuelto' : ''}`);
     refrescarTodo({ silencioso: true });

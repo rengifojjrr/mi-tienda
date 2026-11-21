@@ -5,6 +5,7 @@ add_circle
 add_link
 add_photo_alternate
 add_shopping_cart
+admin_panel_settings
 air
 airline_seat_recline_extra
 all_inclusive
@@ -17,6 +18,7 @@ arrow_forward
 arrow_upward
 assignment_return
 auto_awesome
+autorenew
 backpack
 backup
 badge
@@ -107,6 +109,7 @@ help
 hide_image
 history
 home
+how_to_reg
 icecream
 image
 inbox
@@ -160,6 +163,7 @@ pets
 photo_camera
 photo_library
 playlist_add
+point_of_sale
 pool
 priority_high
 public
@@ -227,6 +231,7 @@ tune
 tv
 two_wheeler
 undo
+update
 upload
 usb
 verified
