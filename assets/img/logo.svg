@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MI TIENDA">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00855d"/><stop offset="1" stop-color="#006948"/></linearGradient></defs>
+  <rect width="64" height="64" rx="16" fill="url(#g)"/>
+  <path d="M14 26.5 17.6 16h28.8L50 26.5c0 3.6-2.7 6.3-6 6.3-2.6 0-4.7-1.6-5.5-3.9-.8 2.3-3 3.9-5.6 3.9h-1.8c-2.6 0-4.8-1.6-5.6-3.9-.8 2.3-2.9 3.9-5.5 3.9-3.3 0-6-2.7-6-6.3Z" fill="#fff"/>
+  <path d="M18 35.6V48h28V35.6" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="40.5" cy="42.5" r="7.5" fill="#25D366" stroke="#fff" stroke-width="2.4"/>
+  <path d="M37.6 42.4l2 2 3.6-3.8" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

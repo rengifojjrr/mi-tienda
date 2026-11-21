@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { -webkit-tap-highlight-color: transparent; text-size-adjust: 100%; }
+  body { overscroll-behavior-y: none; }
+  [hidden] { display: none !important; }
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    user-select: none;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .relleno { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .tnum { font-variant-numeric: tabular-nums; }
+  .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); }
+  .pt-safe { padding-top: env(safe-area-inset-top, 0px); }
+  .no-scrollbar { scrollbar-width: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  :focus-visible { outline: 2px solid #059669; outline-offset: 2px; }
+  input[type='number']::-webkit-inner-spin-button { opacity: 0.4; }
+  ::selection { background: #006948; color: #fff; }
+}
+
+@layer components {
+  /* ---------- Botones ---------- */
+  .btn {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-lg px-4 h-10 font-label-lg text-label-lg transition-all active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none whitespace-nowrap;
+  }
+  .btn-sm { @apply h-8 px-3 font-label-md text-label-md; }
+  .btn-primario { @apply btn bg-primary text-on-primary hover:bg-[#047857] shadow-xs; }
+  .btn-secundario { @apply btn bg-white text-[#334155] border border-[#E2E8F0] hover:bg-[#F8FAFC] hover:border-[#CBD5E1]; }
+  .btn-fantasma { @apply btn text-primary hover:bg-surface-container; }
+  .btn-peligro { @apply btn bg-error text-on-error hover:bg-[#93000a]; }
+  .btn-peligro-suave { @apply btn bg-white text-error border border-[#FECACA] hover:bg-[#FEF2F2]; }
+  .btn-wa { @apply btn bg-wa text-white hover:bg-wa-hover active:bg-wa-activo shadow-wa; }
+  .btn-icono {
+    @apply inline-flex items-center justify-center w-9 h-9 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors disabled:opacity-40 disabled:pointer-events-none;
+  }
+
+  /* ---------- Formularios ---------- */
+  .campo {
+    @apply w-full h-12 lg:h-[42px] px-3 rounded-lg bg-white border border-[#E2E8F0] text-[#0F172A] font-body-md text-body-md placeholder:text-[#94A3B8] transition-shadow focus:outline-none focus:border-[#059669] focus:ring-[3px] focus:ring-[#059669]/15 disabled:bg-[#F8FAFC] disabled:text-[#64748B];
+  }
+  textarea.campo { @apply h-auto py-2.5 leading-relaxed; }
+  select.campo { @apply pr-9 appearance-none cursor-pointer bg-no-repeat; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%2364748B'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E"); background-position: right 0.6rem center; }
+  .campo-error { @apply border-[#EF4444] focus:border-[#EF4444] focus:ring-[#EF4444]/15; }
+  .etiqueta { @apply block font-label-md text-label-md text-[#334155] mb-1.5; }
+  .ayuda { @apply font-body-sm text-body-sm text-[#64748B] mt-1; }
+
+  /* Interruptor (checkbox con apariencia de switch) */
+  .interruptor { @apply relative inline-flex w-10 h-6 shrink-0 cursor-pointer appearance-none rounded-full bg-[#CBD5E1] transition-colors checked:bg-primary disabled:opacity-50; }
+  .interruptor::after { content: ''; @apply absolute top-0.5 left-0.5 w-5 h-5 rounded-full bg-white shadow transition-transform; }
+  .interruptor:checked::after { transform: translateX(16px); }
+
+  /* ---------- Superficies ---------- */
+  .tarjeta { @apply bg-white rounded-2xl border border-[#E2E8F0] shadow-nivel1; }
+  .tarjeta-hover { @apply transition-shadow hover:shadow-nivel2; }
+
+  /* ---------- Chips de estado ---------- */
+  .chip { @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 font-label-sm text-label-sm uppercase tracking-[0.04em] border whitespace-nowrap; }
+  .chip-verde { @apply chip bg-[#ECFDF5] text-[#065F46] border-[#A7F3D0]; }
+  .chip-rojo { @apply chip bg-[#FEF2F2] text-[#991B1B] border-[#FECACA]; }
+  .chip-ambar { @apply chip bg-[#FFFBEB] text-[#92400E] border-[#FDE68A]; }
+  .chip-azul { @apply chip bg-[#EFF6FF] text-[#1E40AF] border-[#BFDBFE]; }
+  .chip-gris { @apply chip bg-[#F8FAFC] text-[#475569] border-[#E2E8F0]; }
+  .chip-violeta { @apply chip bg-[#F5F3FF] text-[#5B21B6] border-[#DDD6FE]; }
+  .chip-wa { @apply chip bg-wa/10 text-[#136633] border-wa/30; }
+
+  /* ---------- Tablas del panel ---------- */
+  .tabla { @apply w-full text-left border-collapse; }
+  .tabla thead th { @apply bg-[#F8FAFC] px-4 py-3 font-label-sm text-label-sm uppercase tracking-[0.04em] text-[#64748B] whitespace-nowrap border-b border-[#E2E8F0]; }
+  .tabla tbody td { @apply px-4 py-3 border-b border-[#F1F5F9] align-middle font-body-md text-body-md text-[#334155]; }
+  .tabla tbody tr { @apply transition-colors hover:bg-[#F8FAFC]; }
+
+  /* ---------- Esqueletos de carga ---------- */
+  .esqueleto { @apply rounded-lg bg-surface-container animate-pulse; }
+
+  /* ---------- Texto con formato (descripciones en markdown) ---------- */
+  .prosa { @apply font-body-md text-body-md text-on-surface-variant leading-relaxed; }
+  .prosa h2 { @apply font-headline-sm text-headline-sm text-on-surface mt-4 mb-2 first:mt-0; }
+  .prosa h3 { @apply font-subheading text-subheading text-on-surface font-bold mt-3 mb-1.5 first:mt-0; }
+  .prosa h4 { @apply font-label-lg text-label-lg text-on-surface mt-3 mb-1 first:mt-0; }
+  .prosa p { @apply my-2 first:mt-0 last:mb-0; }
+  .prosa ul { @apply list-disc pl-5 my-2 space-y-1; }
+  .prosa ol { @apply list-decimal pl-5 my-2 space-y-1; }
+  .prosa strong { @apply text-on-surface font-semibold; }
+  .prosa a { @apply text-primary underline underline-offset-2; }
+}

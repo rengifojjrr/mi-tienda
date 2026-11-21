@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+ACCESO-ADMIN.txt
+*.local
+.claude/

@@ -1,0 +1,81 @@
+// Tokens del sistema de diseño "Commercial Commerce & Operations" (export de Stitch).
+// Los nombres (primary, surface-container-*, font-headline-sm…) son los mismos del diseño
+// original para poder copiar su marcado tal cual.
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./*.html', './admin/*.html', './assets/js/**/*.js'],
+  theme: {
+    extend: {
+      colors: {
+        'primary-fixed-dim': '#68dba9', 'on-secondary': '#ffffff', 'on-tertiary-container': '#fefcff',
+        'outline-variant': '#bccac0', 'on-surface-variant': '#3d4a42', 'inverse-surface': '#283044',
+        'surface-container-highest': '#dae2fd', 'tertiary-fixed': '#d8e2ff', 'on-tertiary-fixed': '#001a42',
+        'on-background': '#131b2e', 'on-secondary-fixed-variant': '#005322', error: '#ba1a1a', tertiary: '#0058be',
+        surface: '#faf8ff', 'primary-fixed': '#85f8c4', 'secondary-fixed-dim': '#3de273', 'on-error-container': '#93000a',
+        'on-primary-container': '#f5fff7', 'on-secondary-fixed': '#002109', 'on-error': '#ffffff',
+        'surface-container-high': '#e2e7ff', 'on-tertiary': '#ffffff', 'surface-container-low': '#f2f3ff',
+        'on-primary-fixed-variant': '#005137', primary: '#006948', 'surface-bright': '#faf8ff',
+        'on-tertiary-fixed-variant': '#004395', background: '#faf8ff', 'on-surface': '#131b2e', secondary: '#006d2f',
+        'on-secondary-container': '#007232', 'on-primary-fixed': '#002114', 'tertiary-fixed-dim': '#adc6ff',
+        outline: '#6d7a72', 'surface-container': '#eaedff', 'surface-dim': '#d2d9f4', 'inverse-on-surface': '#eef0ff',
+        'on-primary': '#ffffff', 'surface-variant': '#dae2fd', 'error-container': '#ffdad6', 'surface-tint': '#006c4a',
+        'tertiary-container': '#2170e4', 'surface-container-lowest': '#ffffff', 'secondary-container': '#5dfd8a',
+        'primary-container': '#00855d', 'secondary-fixed': '#66ff8e', 'inverse-primary': '#68dba9',
+        wa: { DEFAULT: '#25D366', hover: '#1EBE5D', activo: '#16A34A', tinta: '#128C7E', oscuro: '#075E54', burbuja: '#DCF8C6' },
+      },
+      borderRadius: { DEFAULT: '0.25rem', lg: '0.5rem', xl: '0.75rem', '2xl': '1rem', '3xl': '1.5rem', full: '9999px' },
+      spacing: {
+        'space-xl': '2.5rem', 'space-sm': '0.5rem', 'gutter-desktop': '1.5rem', 'space-lg': '1.5rem', 'space-md': '1rem',
+        margin: '1rem', 'margin-desktop': '2rem', 'space-xs': '0.25rem', gutter: '1rem',
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        'display-hero': ['Plus Jakarta Sans', 'sans-serif'], 'headline-sm': ['Plus Jakarta Sans', 'sans-serif'],
+        'headline-lg': ['Plus Jakarta Sans', 'sans-serif'], 'body-md': ['Inter', 'sans-serif'], 'label-sm': ['Inter', 'sans-serif'],
+        subheading: ['Plus Jakarta Sans', 'sans-serif'], 'label-md': ['Inter', 'sans-serif'], 'label-lg': ['Inter', 'sans-serif'],
+        'headline-md': ['Plus Jakarta Sans', 'sans-serif'], 'display-hero-mobile': ['Plus Jakarta Sans', 'sans-serif'],
+        'body-lg': ['Inter', 'sans-serif'], 'headline-lg-mobile': ['Plus Jakarta Sans', 'sans-serif'], 'body-sm': ['Inter', 'sans-serif'],
+        jakarta: ['Plus Jakarta Sans', 'sans-serif'],
+      },
+      fontSize: {
+        'display-hero': ['40px', { lineHeight: '48px', fontWeight: '800' }],
+        'headline-sm': ['18px', { lineHeight: '24px', fontWeight: '600' }],
+        'headline-lg': ['32px', { lineHeight: '40px', fontWeight: '700' }],
+        'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }],
+        'label-sm': ['10px', { lineHeight: '14px', fontWeight: '700' }],
+        subheading: ['16px', { lineHeight: '22px', fontWeight: '600' }],
+        'label-md': ['12px', { lineHeight: '16px', fontWeight: '600' }],
+        'label-lg': ['14px', { lineHeight: '20px', fontWeight: '600' }],
+        'headline-md': ['22px', { lineHeight: '28px', fontWeight: '700' }],
+        'display-hero-mobile': ['30px', { lineHeight: '38px', fontWeight: '800' }],
+        'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }],
+        'headline-lg-mobile': ['24px', { lineHeight: '32px', fontWeight: '700' }],
+        'body-sm': ['12px', { lineHeight: '18px', fontWeight: '400' }],
+      },
+      boxShadow: {
+        xs: '0 1px 2px 0 rgba(15, 23, 42, 0.05)',
+        nivel1: '0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.03)',
+        nivel2: '0 8px 18px -4px rgba(15, 23, 42, 0.08), 0 4px 6px -2px rgba(15, 23, 42, 0.04)',
+        nivel3: '0 14px 28px -6px rgba(15, 23, 42, 0.12), 0 8px 10px -4px rgba(15, 23, 42, 0.04)',
+        wa: '0 8px 24px -4px rgba(37, 211, 102, 0.35)',
+        'wa-fuerte': '0 8px 24px -4px rgba(37, 211, 102, 0.45)',
+      },
+      keyframes: {
+        rebote: { '0%,100%': { transform: 'scale(1)' }, '40%': { transform: 'scale(1.25)' } },
+        entrar: { from: { opacity: '0', transform: 'translateY(8px)' }, to: { opacity: '1', transform: 'translateY(0)' } },
+        brillo: { '0%': { backgroundPosition: '-400px 0' }, '100%': { backgroundPosition: '400px 0' } },
+        subir: { from: { transform: 'translateY(100%)' }, to: { transform: 'translateY(0)' } },
+        deslizar: { from: { transform: 'translateX(100%)' }, to: { transform: 'translateX(0)' } },
+      },
+      animation: {
+        rebote: 'rebote 320ms ease-out',
+        entrar: 'entrar 240ms ease-out both',
+        brillo: 'brillo 1.2s linear infinite',
+        subir: 'subir 260ms cubic-bezier(.2,.8,.2,1) both',
+        deslizar: 'deslizar 260ms cubic-bezier(.2,.8,.2,1) both',
+      },
+      screens: { xs: '400px' },
+    },
+  },
+  plugins: [],
+};

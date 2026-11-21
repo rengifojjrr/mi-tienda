@@ -1,0 +1,406 @@
+{
+  "config": {
+    "nombre": "MI TIENDA",
+    "eslogan": "Comercio directo por WhatsApp",
+    "moneda": "USD",
+    "locale": "es-US",
+    "zona_horaria": "America/New_York",
+    "horario": "Lunes a Sábado • 9am a 8pm",
+    "envio_gratis_desde": 150,
+    "costo_envio": 8,
+    "stock_bajo_umbral": 10,
+    "bodega": "Bodega Principal",
+    "redes": { "instagram": "", "facebook": "", "tiktok": "" }
+  },
+  "contenido": {
+    "beneficios": {
+      "etiqueta": "¿Por qué comprar en {tienda}?",
+      "titulo": "Comercio transparente y seguro",
+      "items": [
+        { "icono": "support_agent", "color": "whatsapp", "titulo": "Atención 100% WhatsApp", "texto": "Asesor humano inmediato para dudas y seguimiento." },
+        { "icono": "local_shipping", "color": "primary", "titulo": "Envíos Rápidos", "texto": "Despachos diarios a todo el país con código de guía." },
+        { "icono": "verified_user", "color": "tertiary", "titulo": "Garantía Directa", "texto": "Cambio inmediato sin trabas ante cualquier falla." },
+        { "icono": "payments", "color": "secondary", "titulo": "Pago Seguro", "texto": "Contra entrega en zonas clave y transferencia bancaria." }
+      ]
+    },
+    "faq": [
+      { "pregunta": "¿Cómo realizo mi pedido?", "respuesta": "¡Es muy fácil! Toca **+** o **Agregar** en tus productos favoritos. Luego abre **Mi Pedido** y presiona el botón de WhatsApp: se redacta una lista automática con tus artículos, lista para coordinar pago y envío con un asesor." },
+      { "pregunta": "¿Cuáles son los métodos de pago?", "respuesta": "Aceptamos transferencia bancaria, tarjetas de débito o crédito mediante enlace de cobro seguro y pago contra entrega en efectivo en las zonas con cobertura. El asesor te confirma la opción disponible para tu ciudad." },
+      { "pregunta": "¿Hacen envíos a mi ciudad?", "respuesta": "Sí, enviamos a todo el país con paquetería exprés. Cuando confirmas el pedido por WhatsApp te compartimos el número de guía para que sigas tu paquete." },
+      { "pregunta": "¿Cuánto tarda en llegar mi pedido?", "respuesta": "Despachamos el mismo día los pedidos confirmados antes de las 3 pm. La entrega suele tomar de 24 a 72 horas según tu ciudad." },
+      { "pregunta": "¿Puedo cambiar o devolver un producto?", "respuesta": "Sí. Tienes 30 días para cambios por defectos de fábrica. Escríbenos por WhatsApp con tu número de pedido y te guiamos. Revisa la **Política de Devolución** para más detalles." }
+    ],
+    "garantia_envios": [
+      { "icono": "local_shipping", "color": "primary", "titulo": "Entrega Rápida en 24 a 48 Horas", "texto": "Envíos asegurados a todo el país con número de seguimiento en tiempo real vía WhatsApp." },
+      { "icono": "verified", "color": "secondary", "titulo": "Garantía Directa de Fábrica", "texto": "Cambio inmediato por defectos técnicos durante los primeros 30 días sin complicaciones." },
+      { "icono": "payments", "color": "tertiary", "titulo": "Pago Contra Entrega o Transferencia", "texto": "Coordina el método que más te convenga directamente con nuestro asesor al confirmar tu orden." }
+    ],
+    "pie": {
+      "texto": "Tu portal de comercio digital directo y sin complicaciones. Productos garantizados con despacho inmediato y atención cercana por WhatsApp."
+    },
+    "soporte": {
+      "titulo": "¿En qué te ayudamos?",
+      "texto": "Nuestro equipo responde por WhatsApp en el horario de atención. Si ya hiciste un pedido, ten a mano su número (por ejemplo WA-1024)."
+    },
+    "legal": {
+      "devoluciones": "## Política de Devolución\n\nQueremos que compres con tranquilidad.\n\n- Tienes **30 días** desde la entrega para solicitar un cambio por defecto de fábrica.\n- El producto debe volver con sus accesorios y empaque original.\n- Escríbenos por WhatsApp con tu número de pedido y fotos del problema; te respondemos el mismo día hábil.\n- Si el cambio procede, el envío de retorno corre por nuestra cuenta.\n\nLos productos de higiene personal abiertos no admiten devolución, salvo defecto de fábrica.",
+      "terminos": "## Términos del Servicio\n\nAl hacer un pedido en esta tienda aceptas estas condiciones:\n\n- Los precios y la disponibilidad se confirman por WhatsApp antes del pago. El total que ves en la tienda es una **cotización estimada**.\n- El pedido queda confirmado cuando recibimos el pago o acordamos el pago contra entrega.\n- Las promociones aplican mientras estén vigentes y no son acumulables, salvo que se indique lo contrario.\n- Podemos cancelar un pedido si el producto se agota; en ese caso te devolvemos el 100% de lo pagado.",
+      "privacidad": "## Privacidad y Datos\n\n- Sólo pedimos los datos necesarios para atender tu pedido: nombre, ciudad y, si quieres, tu teléfono.\n- Usamos esos datos únicamente para coordinar el pago, el envío y la garantía.\n- No vendemos ni compartimos tu información con terceros.\n- Tu lista de pedido y tus favoritos se guardan en tu propio navegador.\n- Puedes pedirnos por WhatsApp que borremos tus datos en cualquier momento."
+    }
+  },
+  "categorias": [
+    { "slug": "tecnologia", "nombre": "Tecnología", "icono": "devices", "imagen": "cat-tecnologia", "orden": 1, "descripcion": "Audio, relojes inteligentes, cargadores y accesorios para tu día a día." },
+    { "slug": "calzado-moda", "nombre": "Calzado & Moda", "icono": "apparel", "imagen": "cat-calzado-moda", "orden": 2, "descripcion": "Zapatillas, mochilas y accesorios de estilo urbano." },
+    { "slug": "hogar-confort", "nombre": "Hogar & Confort", "icono": "chair", "imagen": "cat-hogar", "orden": 3, "descripcion": "Iluminación, organización y bienestar para tu casa u oficina." },
+    { "slug": "belleza-cuidado", "nombre": "Belleza & Cuidado", "icono": "spa", "imagen": "cat-belleza", "orden": 4, "descripcion": "Rutinas de cuidado personal con ingredientes de calidad." }
+  ],
+  "productos": [
+    {
+      "slug": "auriculares-inalambricos-pro-anc", "sku": "AUD-PRO-094", "codigo_barras": "7798123456789",
+      "nombre": "Auriculares Inalámbricos Pro ANC", "marca": "SoundMaster", "modelo": "ANC-900 Pro", "material": "Aluminio & Cuero Vegano", "peso": "245 gramos",
+      "categoria": "tecnologia", "subcategoria": "Audio personal",
+      "descripcion_corta": "Cancelación activa de ruido híbrida de 40dB, sonido Hi-Res inalámbrico y 32 horas de batería. Resistente al agua IPX5.",
+      "descripcion": "### Sumérgete en sonido puro de alta fidelidad\nExperimenta audio de estudio sin interrupciones con la cancelación activa de ruido híbrida de 40dB. Diseñados para jornadas largas de trabajo y entrenamientos intensos.\n\n- **Transductores:** dinámicos de 40mm con diafragma de titanio.\n- **Cancelación:** híbrida con 4 micrófonos y modo Transparencia.\n- **Carga rápida:** 10 minutos de carga = 5 horas de música.",
+      "etiquetas": ["Audio HD", "Bluetooth 5.3", "Cancelación de Ruido", "Impermeable IPX5"],
+      "destacados": [
+        { "icono": "battery_charging_full", "titulo": "32h Autonomía", "detalle": "Con estuche" },
+        { "icono": "noise_control_on", "titulo": "ANC 40dB", "detalle": "Silencio total" },
+        { "icono": "mic", "titulo": "4 Micrófonos HD", "detalle": "Llamadas nítidas" },
+        { "icono": "water_drop", "titulo": "IPX5 Impermeable", "detalle": "Contra sudor/lluvia" }
+      ],
+      "especificaciones": [
+        { "nombre": "Conectividad", "valor": "Bluetooth 5.3 de ultra baja latencia" },
+        { "nombre": "Batería del Estuche", "valor": "500 mAh (Li-Po)" },
+        { "nombre": "Batería Auricular", "valor": "45 mAh (7-8h de uso continuo)" },
+        { "nombre": "Puerto de Entrada", "valor": "USB-C de Carga Rápida" },
+        { "nombre": "Compatibilidad", "valor": "Android, iOS, Windows, Mac" }
+      ],
+      "variantes": [
+        { "nombre": "Negro Grafito", "detalle": "Color principal", "color": "#1e293b", "sku": "AUD-PRO-094-BLK", "precio_extra": 0, "stock": 36 },
+        { "nombre": "Blanco Nieve", "detalle": "Acabado perla", "color": "#f8fafc", "sku": "AUD-PRO-094-WHT", "precio_extra": 2, "stock": 12 },
+        { "nombre": "Azul Petróleo", "detalle": "Edición limitada", "color": "#1e3a5f", "sku": "AUD-PRO-094-BLU", "precio_extra": 0, "stock": 0 }
+      ],
+      "garantias": [ { "nombre": "Estándar 6 Meses", "precio_extra": 0 }, { "nombre": "Extendida 12 Meses", "precio_extra": 5 } ],
+      "relacionados": ["estuche-rigido-pro", "cargador-rapido-30w", "soporte-mesa-aluminio"],
+      "imagenes": ["auriculares-pro-anc-1", "auriculares-pro-anc-2", "auriculares-pro-anc-3", "auriculares-pro-anc-4", "auriculares-pro-anc-5"],
+      "precio": 65, "precio_oferta": 48, "oferta_activa": true, "stock_minimo": 8, "destacado": true, "ventas": 142,
+      "costo": 22, "ubicacion": "Pasillo A - Estante 4"
+    },
+    {
+      "slug": "smartwatch-deportivo-ultra-v3", "sku": "SMT-V3-102", "nombre": "Smartwatch Deportivo Ultra V3", "marca": "PulseTech", "modelo": "Ultra V3", "material": "Titanio y silicona", "peso": "61 gramos",
+      "categoria": "tecnologia", "subcategoria": "Relojes inteligentes",
+      "descripcion_corta": "GPS de doble banda, pantalla AMOLED siempre encendida y hasta 14 días de batería. Sumergible 5 ATM.",
+      "descripcion": "### Tu entrenador en la muñeca\nMide frecuencia cardíaca, oxígeno en sangre, sueño y más de 100 deportes. La caja de titanio resiste golpes y el cristal de zafiro no se raya.\n\n- Notificaciones de WhatsApp y llamadas.\n- Mapas sin conexión para rutas de montaña.",
+      "etiquetas": ["GPS", "AMOLED", "5 ATM", "Salud"],
+      "destacados": [
+        { "icono": "satellite_alt", "titulo": "GPS doble banda", "detalle": "Rutas precisas" },
+        { "icono": "battery_charging_full", "titulo": "14 días", "detalle": "De batería" },
+        { "icono": "favorite", "titulo": "Salud 24/7", "detalle": "Pulso y SpO2" },
+        { "icono": "pool", "titulo": "5 ATM", "detalle": "Para nadar" }
+      ],
+      "especificaciones": [
+        { "nombre": "Pantalla", "valor": "AMOLED 1,43\" siempre encendida" },
+        { "nombre": "Batería", "valor": "Hasta 14 días (uso típico)" },
+        { "nombre": "Resistencia", "valor": "5 ATM, cristal de zafiro" },
+        { "nombre": "Compatibilidad", "valor": "Android 8+ e iOS 14+" }
+      ],
+      "variantes": [
+        { "nombre": "Correa Silicona Negra", "detalle": "Incluida", "color": "#111827", "sku": "SMT-V3-102-NEG", "precio_extra": 0, "stock": 14 },
+        { "nombre": "Correa Nylon Verde", "detalle": "Tejida", "color": "#14532d", "sku": "SMT-V3-102-VER", "precio_extra": 4, "stock": 6 }
+      ],
+      "relacionados": ["cargador-rapido-30w", "bateria-magnetica-magcharge-10000"],
+      "imagenes": ["smartwatch-ultra-v3-1", "smartwatch-ultra-v3-2"],
+      "precio": 89, "stock_minimo": 5, "destacado": true, "ventas": 98, "costo": 41, "ubicacion": "Pasillo A - Estante 2"
+    },
+    {
+      "slug": "zapatillas-urban-air-flex", "sku": "ZAP-UAF-042", "nombre": "Zapatillas Urban Air Flex", "marca": "AeroSport", "material": "Malla transpirable y suela de aire", "peso": "290 gramos",
+      "categoria": "calzado-moda", "subcategoria": "Zapatillas urbanas",
+      "descripcion_corta": "Amortiguación de aire visible, malla transpirable y suela antideslizante para todo el día.",
+      "descripcion": "### Ligeras, cómodas y con estilo\nLa cámara de aire en el talón absorbe el impacto y la malla deja respirar el pie. Perfectas para la ciudad, el gimnasio o el fin de semana.",
+      "etiquetas": ["Running", "Urbano", "Transpirable"],
+      "destacados": [
+        { "icono": "air", "titulo": "Air Flex", "detalle": "Amortiguación" },
+        { "icono": "eco", "titulo": "Transpirable", "detalle": "Malla técnica" }
+      ],
+      "especificaciones": [ { "nombre": "Horma", "valor": "Normal (pide tu talla habitual)" }, { "nombre": "Suela", "valor": "Caucho antideslizante" } ],
+      "variantes": [
+        { "nombre": "Talla 39", "sku": "ZAP-UAF-042-39", "precio_extra": 0, "stock": 3 },
+        { "nombre": "Talla 40", "sku": "ZAP-UAF-042-40", "precio_extra": 0, "stock": 5 },
+        { "nombre": "Talla 41", "sku": "ZAP-UAF-042-41", "precio_extra": 0, "stock": 6 },
+        { "nombre": "Talla 42", "sku": "ZAP-UAF-042-42", "precio_extra": 0, "stock": 4 },
+        { "nombre": "Talla 43", "sku": "ZAP-UAF-042-43", "precio_extra": 0, "stock": 2 },
+        { "nombre": "Talla 44", "sku": "ZAP-UAF-042-44", "precio_extra": 0, "stock": 0 }
+      ],
+      "relacionados": ["zapatillas-urban-runner-v2", "mochila-antirrobo-impermeable"],
+      "imagenes": ["zapatillas-urban-air-flex"],
+      "precio": 90, "precio_oferta": 72, "oferta_activa": true, "stock_minimo": 6, "destacado": true, "novedad": true, "ventas": 64, "costo": 35, "ubicacion": "Pasillo C - Estante 1"
+    },
+    {
+      "slug": "lampara-led-nordica-tactil", "sku": "DEC-LMP-108", "nombre": "Lámpara LED Nórdica Táctil", "marca": "NordicLiving", "material": "Metal y madera", "peso": "1,1 kg",
+      "categoria": "hogar-confort", "subcategoria": "Iluminación",
+      "descripcion_corta": "Lámpara de mesa con control táctil, 3 tonos de luz y regulación de intensidad.",
+      "descripcion": "### Luz cálida a un toque\nToca la base para encender, cambiar el tono (cálido, neutro, frío) o atenuar la luz. Ideal para mesas de noche y escritorios.",
+      "etiquetas": ["LED", "Táctil", "Decoración"],
+      "destacados": [ { "icono": "touch_app", "titulo": "Táctil", "detalle": "Sin interruptor" }, { "icono": "light_mode", "titulo": "3 tonos", "detalle": "Regulable" } ],
+      "especificaciones": [ { "nombre": "Potencia", "valor": "8 W LED (equivale a 60 W)" }, { "nombre": "Alimentación", "valor": "USB-C 5V" } ],
+      "relacionados": ["lampara-nordica-madera", "organizador-modular-escritorio"],
+      "imagenes": ["lampara-nordica-tactil"],
+      "precio": 34, "stock": 4, "stock_minimo": 5, "destacado": true, "ventas": 41, "costo": 13, "ubicacion": "Pasillo D - Estante 3"
+    },
+    {
+      "slug": "camara-seguridad-smart-360", "sku": "CAM-360-210", "nombre": "Cámara de Seguridad Smart 360", "marca": "VisionHome",
+      "categoria": "tecnologia", "subcategoria": "Hogar inteligente",
+      "descripcion_corta": "Giro de 360°, visión nocturna y alertas de movimiento en tu celular.",
+      "descripcion": "### Vigila tu casa desde el celular\nGira 360° en horizontal, graba en Full HD y te avisa cuando detecta movimiento. Habla y escucha con el audio bidireccional.",
+      "etiquetas": ["WiFi", "Full HD", "Visión nocturna"],
+      "destacados": [ { "icono": "360", "titulo": "Giro 360°", "detalle": "Sin puntos ciegos" }, { "icono": "dark_mode", "titulo": "Visión nocturna", "detalle": "Hasta 10 m" } ],
+      "especificaciones": [ { "nombre": "Resolución", "valor": "1080p Full HD" }, { "nombre": "Conexión", "valor": "WiFi 2,4 GHz" }, { "nombre": "Almacenamiento", "valor": "MicroSD hasta 256 GB o nube" } ],
+      "imagenes": ["camara-seguridad-360"],
+      "precio": 52, "precio_oferta": 39.9, "oferta_activa": true, "stock": 24, "ventas": 37, "costo": 18
+    },
+    {
+      "slug": "mochila-antirrobo-impermeable", "sku": "MOC-ATR-015", "nombre": "Mochila Antirrobo Impermeable", "marca": "UrbanPack",
+      "categoria": "calzado-moda", "subcategoria": "Mochilas",
+      "descripcion_corta": "Cierres ocultos, puerto USB de carga y tela repelente al agua. Para laptops de hasta 15,6\".",
+      "descripcion": "### Lleva tus cosas seguras\nLos cierres quedan contra tu espalda, así nadie puede abrirla en el transporte público. Incluye puerto USB para cargar el celular con tu batería externa.",
+      "etiquetas": ["Antirrobo", "Laptop", "Impermeable"],
+      "destacados": [ { "icono": "lock", "titulo": "Antirrobo", "detalle": "Cierres ocultos" }, { "icono": "usb", "titulo": "Puerto USB", "detalle": "Carga en camino" } ],
+      "imagenes": ["mochila-antirrobo"],
+      "precio": 45, "stock": 18, "ventas": 29, "costo": 17
+    },
+    {
+      "slug": "teclado-mecanico-rgb-pro", "sku": "TEC-RGB-077", "nombre": "Teclado Mecánico RGB Pro", "marca": "KeyForge",
+      "categoria": "tecnologia", "subcategoria": "Computación",
+      "descripcion_corta": "Formato 75%, switches intercambiables en caliente y retroiluminación RGB personalizable.",
+      "descripcion": "### Escribe y juega con precisión\nSwitches lineales lubricados de fábrica, teclas PBT de doble inyección y conexión inalámbrica o por cable.",
+      "etiquetas": ["Mecánico", "RGB", "Inalámbrico"],
+      "imagenes": ["teclado-mecanico-rgb-pro"],
+      "precio": 68, "stock": 0, "stock_minimo": 4, "al_agotarse": "bloquear", "ventas": 22, "costo": 30
+    },
+    {
+      "slug": "botella-termica-inox-1l", "sku": "BOT-INX-100", "nombre": "Botella Térmica Inox 1L", "marca": "EcoVibe",
+      "categoria": "hogar-confort", "subcategoria": "Bienestar",
+      "descripcion_corta": "Acero inoxidable de doble pared: 24 horas frío y 12 horas caliente.",
+      "descripcion": "### Tu bebida a la temperatura perfecta\nDoble pared al vacío, tapa a prueba de fugas y acabado mate que no se resbala.",
+      "etiquetas": ["Térmica", "1 litro", "Sin BPA"],
+      "imagenes": ["botella-termica-inox"],
+      "precio": 28, "precio_oferta": 22, "oferta_activa": true, "relampago": true, "stock": 40, "ventas": 55, "costo": 8
+    },
+    {
+      "slug": "parlante-bluetooth-outdoor-waterproof", "sku": "PAR-OUT-330", "nombre": "Parlante Bluetooth Outdoor Waterproof", "marca": "SonicPulse",
+      "categoria": "tecnologia", "subcategoria": "Audio",
+      "descripcion_corta": "Sonido 360°, resistente al agua IP67 y 20 horas de batería. Flota en el agua.",
+      "descripcion": "### Música donde vayas\nResiste polvo, golpes y agua (IP67). Conecta dos parlantes para sonido estéreo.",
+      "etiquetas": ["IP67", "Bluetooth", "Outdoor"],
+      "destacados": [ { "icono": "water_drop", "titulo": "IP67", "detalle": "Sumergible" }, { "icono": "battery_charging_full", "titulo": "20 horas", "detalle": "De música" } ],
+      "imagenes": ["parlante-outdoor"],
+      "precio": 55, "stock": 15, "novedad": true, "ventas": 12, "costo": 21
+    },
+    {
+      "slug": "organizador-modular-escritorio", "sku": "ORG-MOD-018", "nombre": "Organizador Modular de Escritorio", "marca": "NordicLiving",
+      "categoria": "hogar-confort", "subcategoria": "Organización",
+      "descripcion_corta": "Módulos combinables para celular, plumas y accesorios. Acabado en madera de nogal.",
+      "descripcion": "### Un escritorio ordenado\nCombina los módulos como quieras: base para celular, porta lápices y bandeja para cables y llaves.",
+      "etiquetas": ["Escritorio", "Madera"],
+      "imagenes": ["organizador-escritorio"],
+      "precio": 18.5, "stock": 0, "al_agotarse": "preventa", "ventas": 8, "costo": 6
+    },
+    {
+      "slug": "estuche-rigido-pro", "sku": "ACC-EST-012", "nombre": "Estuche Rígido Pro", "marca": "SoundMaster",
+      "categoria": "tecnologia", "subcategoria": "Accesorios",
+      "descripcion_corta": "Estuche rígido con mosquetón para auriculares y cables.",
+      "descripcion": "Protege tus auriculares de golpes y polvo. Interior acolchado y bolsillo de malla para cables.",
+      "imagenes": ["estuche-rigido-pro"],
+      "precio": 12, "stock": 30, "ventas": 26, "costo": 3.5
+    },
+    {
+      "slug": "cargador-rapido-30w", "sku": "ACC-PWR-031", "nombre": "Cargador Rápido 30W", "marca": "Volta",
+      "categoria": "tecnologia", "subcategoria": "Accesorios",
+      "descripcion_corta": "Cargador USB-C de 30W con tecnología GaN: carga tu celular al 50% en 30 minutos.",
+      "descripcion": "Compacto, liviano y compatible con carga rápida PD 3.0 para celulares, tablets y audífonos.",
+      "etiquetas": ["USB-C", "Carga rápida"],
+      "imagenes": ["cargador-30w-1", "cargador-30w-2"],
+      "precio": 15, "stock": 1, "stock_minimo": 5, "ventas": 64, "costo": 5
+    },
+    {
+      "slug": "soporte-mesa-aluminio", "sku": "ACC-SOP-019", "nombre": "Soporte Mesa Aluminio", "marca": "ErgoForm",
+      "categoria": "tecnologia", "subcategoria": "Accesorios",
+      "descripcion_corta": "Soporte de aluminio para auriculares con base antideslizante.",
+      "descripcion": "Mantén tu escritorio en orden y tus auriculares siempre a mano.",
+      "imagenes": ["soporte-aluminio"],
+      "precio": 19, "stock": 22, "ventas": 11, "costo": 6
+    },
+    {
+      "slug": "zapatillas-trail-run-hyper", "sku": "AS-RUN-421", "nombre": "Zapatillas Trail Run Hyper", "marca": "AeroSport",
+      "categoria": "calzado-moda", "subcategoria": "Running",
+      "descripcion_corta": "Agarre extremo en tierra y roca, puntera reforzada y suela con tacos de 4 mm.",
+      "descripcion": "### Hechas para el sendero\nEspuma ligera de alto retorno y una suela que se aferra a cualquier terreno.",
+      "etiquetas": ["Trail", "Running"],
+      "variantes": [
+        { "nombre": "Talla 40", "sku": "AS-RUN-421-40", "precio_extra": 0, "stock": 0 },
+        { "nombre": "Talla 41", "sku": "AS-RUN-421-41", "precio_extra": 0, "stock": 1 },
+        { "nombre": "Talla 42", "sku": "AS-RUN-421-42", "precio_extra": 0, "stock": 1 },
+        { "nombre": "Talla 43", "sku": "AS-RUN-421-43", "precio_extra": 0, "stock": 1 },
+        { "nombre": "Talla 44", "sku": "AS-RUN-421-44", "precio_extra": 0, "stock": 0 }
+      ],
+      "imagenes": ["zapatillas-trail-run"],
+      "precio": 84.5, "stock_minimo": 5, "ventas": 18, "costo": 38
+    },
+    {
+      "slug": "taza-termica-smart-temp", "sku": "NL-MUG-108", "nombre": "Taza Térmica Smart Temp", "marca": "NordicLiving",
+      "categoria": "hogar-confort", "subcategoria": "Bienestar",
+      "descripcion_corta": "Mantiene tu café a la temperatura exacta que elijas desde el celular.",
+      "imagenes": ["taza-smart-temp"],
+      "precio": 55, "stock": 0, "estado": "oculto", "ventas": 9, "costo": 24
+    },
+    {
+      "slug": "reloj-smart-chrono-active", "sku": "PT-WAT-501", "nombre": "Reloj Smart Chrono Active", "marca": "PulseTech",
+      "categoria": "tecnologia", "subcategoria": "Relojes inteligentes",
+      "descripcion_corta": "GPS, pulsómetro de precisión y panel de salud en tiempo real.",
+      "descripcion": "### Rendimiento sin límites\nAnaliza tu entrenamiento con métricas de carga, recuperación y VO2 máx.",
+      "etiquetas": ["GPS", "Pulsómetro"],
+      "imagenes": ["reloj-chrono-active"],
+      "precio": 235, "precio_oferta": 199, "oferta_activa": true, "stock": 22, "ventas": 15, "costo": 96, "envio_gratis": true
+    },
+    {
+      "slug": "mochila-cuero-artisan-urbana", "sku": "AW-BAG-092", "nombre": "Mochila Cuero Artisan Urbana", "marca": "ArtisanWorks",
+      "categoria": "calzado-moda", "subcategoria": "Mochilas",
+      "descripcion_corta": "Cuero genuino color marrón siena con hebillas de latón, hecha a mano.",
+      "imagenes": ["mochila-cuero-artisan"],
+      "precio": 110, "stock": 10, "estado": "borrador", "costo": 48
+    },
+    {
+      "slug": "silla-ergonomica-flowmesh-pro", "sku": "EF-CHR-771", "nombre": "Silla Ergonómica FlowMesh Pro", "marca": "ErgoForm",
+      "categoria": "hogar-confort", "subcategoria": "Oficina",
+      "descripcion_corta": "Malla transpirable, soporte lumbar 3D y apoyabrazos 4D. Envío gratis.",
+      "descripcion": "### Trabaja horas sin dolor de espalda\nEl soporte lumbar se adapta a tu postura y la malla mantiene la espalda fresca.",
+      "etiquetas": ["Ergonómica", "Oficina"],
+      "destacados": [ { "icono": "airline_seat_recline_extra", "titulo": "Lumbar 3D", "detalle": "Ajustable" }, { "icono": "air", "titulo": "Malla", "detalle": "Transpirable" } ],
+      "imagenes": ["silla-flowmesh"],
+      "precio": 350, "precio_oferta": 280, "oferta_activa": true, "stock": 18, "envio_gratis": true, "ventas": 7, "costo": 140
+    },
+    {
+      "slug": "airsound-pods-neo-bass", "sku": "SP-EAR-210", "nombre": "AirSound Pods Neo Bass", "marca": "SonicPulse",
+      "categoria": "tecnologia", "subcategoria": "Audio personal",
+      "descripcion_corta": "Audífonos inalámbricos con graves profundos y estuche de carga compacto.",
+      "imagenes": ["airsound-pods"],
+      "precio": 49.99, "stock": 64, "ventas": 31, "costo": 17
+    },
+    {
+      "slug": "botella-hydropure-750ml", "sku": "EV-BOT-750", "nombre": "Botella HydroPure 750ml", "marca": "EcoVibe",
+      "categoria": "hogar-confort", "subcategoria": "Bienestar",
+      "descripcion_corta": "Botella de acero con tapa de bambú, ideal para el gimnasio y la oficina.",
+      "imagenes": ["botella-hydropure"],
+      "precio": 29.5, "precio_oferta": 24, "oferta_activa": true, "stock": 40, "ventas": 20, "costo": 9
+    },
+    {
+      "slug": "teclado-custom-tkl-mechanical", "sku": "KF-KB-087", "nombre": "Teclado Custom TKL Mechanical", "marca": "KeyForge",
+      "categoria": "tecnologia", "subcategoria": "Computación",
+      "descripcion_corta": "Formato TKL con teclas PBT verde y crema y switches lineales amarillos.",
+      "imagenes": ["teclado-tkl"],
+      "precio": 115, "stock": 4, "stock_minimo": 6, "ventas": 6, "costo": 52
+    },
+    {
+      "slug": "gafas-sol-horizon-polarized", "sku": "SL-SUN-014", "nombre": "Gafas de Sol Horizon Polarized", "marca": "Solara",
+      "categoria": "calzado-moda", "subcategoria": "Accesorios",
+      "descripcion_corta": "Lentes polarizados con protección UV400 y montura ligera.",
+      "imagenes": ["gafas-horizon"],
+      "precio": 60, "precio_oferta": 39, "oferta_activa": true, "relampago": true, "stock": 52, "ventas": 33, "costo": 12
+    },
+    {
+      "slug": "cargador-usb-c-65w-gan", "sku": "CAR-GAN-065", "nombre": "Cargador Rápido USB-C 65W GaN", "marca": "Volta",
+      "categoria": "tecnologia", "subcategoria": "Accesorios",
+      "descripcion_corta": "Dos puertos USB-C: carga tu laptop y tu celular al mismo tiempo.",
+      "imagenes": ["cargador-gan-65w"],
+      "precio": 29.99, "stock": 4, "stock_minimo": 10, "ventas": 27, "costo": 11
+    },
+    {
+      "slug": "bateria-magnetica-magcharge-10000", "sku": "BAT-MAG-10K", "nombre": "Batería Magnética MagCharge 10000", "marca": "Volta",
+      "categoria": "tecnologia", "subcategoria": "Accesorios",
+      "descripcion_corta": "Batería de 10.000 mAh que se pega magnéticamente a tu celular.",
+      "imagenes": ["bateria-magcharge"],
+      "precio": 45, "stock": 54, "stock_minimo": 12, "ventas": 19, "costo": 17
+    },
+    {
+      "slug": "audifonos-tws-pro-buds", "sku": "AUD-TWS-220", "nombre": "Audífonos TWS Pro Buds", "marca": "SoundMaster",
+      "categoria": "tecnologia", "subcategoria": "Audio personal",
+      "descripcion_corta": "Audífonos in-ear con cancelación de ruido, estuche compacto y 30 horas de batería total.",
+      "descripcion": "### Pequeños por fuera, enormes por dentro\nCancelación activa de ruido, modo ambiente y controles táctiles. Incluyen 3 tamaños de almohadillas.",
+      "destacados": [ { "icono": "noise_control_on", "titulo": "ANC", "detalle": "Modo ambiente" }, { "icono": "battery_charging_full", "titulo": "30 horas", "detalle": "Con estuche" } ],
+      "imagenes": ["audifonos-tws-1", "audifonos-tws-2", "audifonos-tws-3", "audifonos-tws-4", "audifonos-tws-5"],
+      "relacionados": ["estuche-rigido-pro", "cargador-rapido-30w"],
+      "precio": 39, "stock": 26, "novedad": true, "ventas": 23, "costo": 14
+    },
+    {
+      "slug": "zapatillas-urban-runner-v2", "sku": "ZAP-411", "nombre": "Zapatillas Urban Runner V2", "marca": "AeroSport",
+      "categoria": "calzado-moda", "subcategoria": "Running",
+      "descripcion_corta": "Malla negra con suela neón de alto rebote para correr en la ciudad.",
+      "imagenes": ["zapatillas-urban-runner"],
+      "precio": 79, "stock": 8, "ventas": 21, "costo": 33
+    },
+    {
+      "slug": "smartwatch-fit-active-gen-4", "sku": "WAT-FIT-402", "nombre": "Smartwatch Fit Active Gen 4", "marca": "PulseTech",
+      "categoria": "tecnologia", "subcategoria": "Relojes inteligentes",
+      "descripcion_corta": "Ligero, con más de 100 modos deportivos y medición de estrés y sueño.",
+      "imagenes": ["smartwatch-fit-active"],
+      "precio": 115, "stock": 0, "stock_minimo": 8, "al_agotarse": "preventa", "ventas": 16, "costo": 47
+    },
+    {
+      "slug": "lampara-nordica-madera", "sku": "DEC-LMP-210", "nombre": "Lámpara Nórdica Madera", "marca": "NordicLiving",
+      "categoria": "hogar-confort", "subcategoria": "Iluminación",
+      "descripcion_corta": "Base de madera natural y pantalla de lino para una luz cálida y acogedora.",
+      "imagenes": ["lampara-madera"],
+      "precio": 42, "stock": 2, "stock_minimo": 5, "ventas": 14, "costo": 16
+    },
+    {
+      "slug": "teclado-mecanico-rgb-stealth-87", "sku": "TEC-MEC-110", "nombre": "Teclado Mecánico RGB Stealth 87", "marca": "KeyForge",
+      "categoria": "tecnologia", "subcategoria": "Computación",
+      "descripcion_corta": "Formato compacto de 87 teclas, perfil bajo y RGB por tecla.",
+      "imagenes": ["teclado-stealth-87"],
+      "precio": 74.5, "stock": 42, "stock_minimo": 10, "ventas": 12, "costo": 31
+    },
+    {
+      "slug": "auriculares-studio-pro-anc", "sku": "SP-ANC-900", "nombre": "Auriculares Studio Pro ANC", "marca": "SonicPulse",
+      "categoria": "tecnologia", "subcategoria": "Audio personal",
+      "descripcion_corta": "Sonido de estudio con cancelación de ruido adaptativa y almohadillas de espuma viscoelástica.",
+      "imagenes": ["auriculares-studio-1", "auriculares-pro-anc-6"],
+      "precio": 179, "precio_oferta": 129, "oferta_activa": true, "stock": 48, "ventas": 10, "costo": 61, "envio_gratis": true
+    },
+    {
+      "slug": "kit-skincare-hidratante", "sku": "BEL-SKN-030", "nombre": "Kit Skincare Hidratante", "marca": "Lumea",
+      "categoria": "belleza-cuidado", "subcategoria": "Cuidado facial",
+      "descripcion_corta": "Sérum de ácido hialurónico, crema hidratante y tónico en un kit de rutina diaria.",
+      "descripcion": "### Tu rutina en tres pasos\n1. Limpia y equilibra con el tónico.\n2. Hidrata en profundidad con el sérum.\n3. Sella con la crema ligera.\n\nApto para todo tipo de piel.",
+      "etiquetas": ["Hidratación", "Rutina diaria"],
+      "imagenes": ["cat-belleza"],
+      "precio": 38, "precio_oferta": 32, "oferta_activa": true, "stock": 20, "novedad": true, "ventas": 9, "costo": 12
+    }
+  ],
+  "banners": [
+    {
+      "etiqueta": "Temporada 2026 • Oficial", "titulo": "Catálogo de Temporada 2026: Calidad garantizada",
+      "subtitulo": "Selecciona tus productos favoritos y haz tu pedido directo a nuestro WhatsApp sin intermediarios ni demoras.",
+      "imagen": "banner-temporada", "nota_imagen": "Stock listo para despacho inmediato",
+      "boton_texto": "Explorar Catálogo", "boton_enlace": "catalogo.html", "boton_whatsapp": true,
+      "mensaje_whatsapp": "Hola {tienda}, quiero conocer las ofertas activas", "orden": 1
+    },
+    {
+      "etiqueta": "Envío gratis", "titulo": "Envío gratis en compras desde $150",
+      "subtitulo": "Arma tu pedido, envíalo por WhatsApp y te lo despachamos el mismo día.",
+      "imagen": "silla-flowmesh", "nota_imagen": "Despachos diarios a todo el país",
+      "boton_texto": "Ver ofertas", "boton_enlace": "catalogo.html?oferta=1", "boton_whatsapp": false, "orden": 2
+    }
+  ],
+  "promociones": [
+    { "nombre": "Descuento de temporada", "tipo": "porcentaje", "valor": 10, "minimo_compra": 100 },
+    { "nombre": "Bienvenida", "codigo": "BIENVENIDO", "tipo": "porcentaje", "valor": 5, "minimo_compra": 0 }
+  ],
+  "testimonios": [
+    { "nombre": "Mariana Córdova", "ciudad": "CDMX", "producto": "auriculares-inalambricos-pro-anc", "producto_texto": "Auriculares Pro ANC", "estrellas": 5, "verificado": true, "orden": 1,
+      "texto": "La atención por WhatsApp fue súper amable y rápida. El paquete llegó en 24 horas y los auriculares tienen una cancelación de ruido impecable. 100% recomendados." },
+    { "nombre": "Carlos Mendoza", "ciudad": "Guadalajara", "producto": "smartwatch-deportivo-ultra-v3", "producto_texto": "Smartwatch Ultra", "estrellas": 5, "verificado": true, "orden": 2,
+      "texto": "Pedí el reloj con envío express. Me enviaron fotos del empaque por chat antes de despachar. Llegó sellado y funcionando al cien." },
+    { "nombre": "Lucía Costa", "ciudad": "Monterrey", "producto": "lampara-led-nordica-tactil", "producto_texto": "Lámpara Nórdica", "estrellas": 4, "verificado": true, "orden": 3,
+      "texto": "La lámpara es preciosa y la luz cálida es justo lo que buscaba. Tardó un día más de lo previsto, pero me avisaron por WhatsApp en todo momento." }
+  ]
+}

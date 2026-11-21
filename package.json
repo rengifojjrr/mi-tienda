@@ -1,0 +1,16 @@
+{
+  "name": "mi-tienda",
+  "private": true,
+  "description": "MI TIENDA: catálogo con pedidos por WhatsApp y panel de administración (sitio estático + Supabase).",
+  "type": "module",
+  "scripts": {
+    "css": "tailwindcss -c tailwind.config.cjs -i src/estilos.css -o assets/css/app.css --minify",
+    "css:ver": "tailwindcss -c tailwind.config.cjs -i src/estilos.css -o assets/css/app.css --watch",
+    "iconos": "node herramientas/iconos.mjs",
+    "construir": "npm run iconos && npm run css",
+    "servir": "node herramientas/servidor.mjs"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.19"
+  }
+}
