@@ -28,13 +28,14 @@
   .btn {
     @apply inline-flex items-center justify-center gap-1.5 rounded-lg px-4 h-10 font-label-lg text-label-lg transition-all active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none whitespace-nowrap;
   }
-  .btn-sm { @apply h-8 px-3 font-label-md text-label-md; }
   .btn-primario { @apply btn bg-primary text-on-primary hover:bg-[#047857] shadow-xs; }
   .btn-secundario { @apply btn bg-white text-[#334155] border border-[#E2E8F0] hover:bg-[#F8FAFC] hover:border-[#CBD5E1]; }
   .btn-fantasma { @apply btn text-primary hover:bg-surface-container; }
   .btn-peligro { @apply btn bg-error text-on-error hover:bg-[#93000a]; }
   .btn-peligro-suave { @apply btn bg-white text-error border border-[#FECACA] hover:bg-[#FEF2F2]; }
   .btn-wa { @apply btn bg-wa text-white hover:bg-wa-hover active:bg-wa-activo shadow-wa; }
+  /* Debe ir después de las variantes para poder achicarlas (btn-secundario btn-sm, etc.) */
+  .btn-sm { @apply h-8 px-3 font-label-md text-label-md; }
   .btn-icono {
     @apply inline-flex items-center justify-center w-9 h-9 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors disabled:opacity-40 disabled:pointer-events-none;
   }
