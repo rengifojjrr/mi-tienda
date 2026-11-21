@@ -370,8 +370,8 @@ const refrescarVista = debounce(() => {
   if ($('#vistaSlug')) $('#vistaSlug').textContent = p.slug || 'se-genera-del-nombre';
 }, 250);
 
-/** Lee el formulario y repinta todo conservando el scroll (para cambios estructurales). */
-function repintar() { leerFormulario(); const y = window.scrollY; pintar(); window.scrollTo(0, y); }
+/** Repinta todo conservando el scroll. Quien llama debe haber hecho leerFormulario() ANTES de cambiar `p`. */
+function repintar() { const y = window.scrollY; pintar(); window.scrollTo(0, y); }
 
 // ---------------- Guardar ----------------
 async function slugLibre(base) {
@@ -499,7 +499,7 @@ contenido.addEventListener('change', (e) => {
   const t = e.target;
   marcarSucio();
   if (t.id === 'archivosFotos') { subirFotos(t.files); return; }
-  if (['oferta_activa', 'rastrear_stock', 'estado', 'al_agotarse'].includes(t.name) || t.dataset.v === 'stock' || t.dataset.v === 'color') { repintar(); return; }
+  if (['oferta_activa', 'rastrear_stock', 'estado', 'al_agotarse'].includes(t.name) || t.dataset.v === 'stock' || t.dataset.v === 'color') { leerFormulario(); repintar(); return; }
   refrescarVista();
 });
 contenido.addEventListener('keydown', (e) => {
