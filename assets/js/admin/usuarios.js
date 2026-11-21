@@ -49,7 +49,7 @@ const colorAvatar = (clave) => COLORES_AVATAR[[...String(clave || '')].reduce((s
 const avatar = (u) => `<span class="w-10 h-10 rounded-full ${colorAvatar(u.id || u.email)} flex items-center justify-center font-label-lg text-label-lg shrink-0 ${u.activo === false ? 'opacity-50' : ''}" aria-hidden="true">${esc(iniciales(u.nombre))}</span>`;
 const fechaLarga = (d) => fecha(d, { day: '2-digit', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit' });
 const chipsEstado = (u) => `${u.activo ? '<span class="chip-verde">Activo</span>' : '<span class="chip-gris">Inactivo</span>'}${u.debe_cambiar_clave ? '<span class="chip-ambar" title="Todavía usa una contraseña temporal">Debe cambiar contraseña</span>' : ''}`;
-const sesionesTexto = (n) => `${n || 0} ${n === 1 ? 'sesión activa' : 'sesiones activas'}`;
+const sesionesTexto = (n) => { const k = Number(n) || 0; return `${k} ${k === 1 ? 'sesión activa' : 'sesiones activas'}`; };
 
 /** Contraseña temporal de 12 caracteres sin letras ambiguas (crypto.getRandomValues, sin sesgo de módulo). */
 function generarClave(largo = 12) {

@@ -514,7 +514,10 @@ async function guardarSeccion(f) {
   boton.innerHTML = `${spinner()}<span>Guardando…</span>`;
   try {
     const r = await db.actualizar('mt_config', 'id=eq.1', cambios);
-    Object.assign(cfg, (Array.isArray(r) && r[0]) || cambios);
+    // Sólo se copian las columnas de esta tarjeta: dos guardados seguidos de tarjetas distintas no se pisan.
+    const fila = (Array.isArray(r) && r[0]) || {};
+    for (const k of Object.keys(cambios)) cfg[k] = k in fila ? fila[k] : cambios[k];
+    if (fila.actualizado_en) cfg.actualizado_en = fila.actualizado_en;
     repintar(s);
     DESPUES[s]?.();
     toast(`${SECCIONES.find((x) => x.id === s).titulo}: cambios guardados`);
